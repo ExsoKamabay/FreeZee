@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../static/css/font.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {%include 'snippets/nav.html'%}
+  <div class="content">
+    <ul class="content-image" style="list-style: none;display: flex;flex-wrap: wrap;justify-content: space-around;align-items: center; flex-direction: row; width: 100%;">
+      {%for image,site,width,height in results%}
+        <li><a href="{{image}}" target="_blank"><img src="{{image}}" alt="{{width}} x {{height}}"></a></li>
+      {%endfor%}
+    </ul>
+  </div>
+</body>
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/script.js"></script>
+</html>

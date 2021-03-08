@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../static/css/font.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {%include 'snippets/nav.html'%}
+  <ul style="list-style: none; background-color: rgba(148, 156, 255, 0.774); border-radius: 15px;">
+    {%for url,title,ratting,image in results%}
+      <li>
+        <a href="{{url}}" style="text-decoration: none;" target="_blank">
+          <h3 style="color: blue; transition: .5s ease all;" id="tt">{{title}} | &#x2605;{{ratting}}</h3></a></li>
+        <img src="{{image}}" alt="gambar" style="border-radius: 10px;">
+    {%endfor%}
+  </ul>
+</body>
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/script.js"></script>
+</html>

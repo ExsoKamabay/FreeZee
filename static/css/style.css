@@ -1,0 +1,106 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("/static/img/bg.jpg");
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  animation: br 1.5s infinite;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@keyframes br{
+  30%{border-color: aqua;}
+  60%{border-color: rgb(235, 49, 252);}
+  90%{border-color: brown;}
+}
+form{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border-radius: 30px;
+  background-color: rgb(0, 55, 158);
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+form ul{
+  display: flex;
+  list-style: none;
+  width: 35%;
+  justify-content: space-between;
+}
+form input#query{
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Reggae One', cursive;
+}
+form ul li input{
+  border: none;
+  color: rgb(2, 163, 2);
+  background-color: rgba(0, 55, 158, 0);
+  font-family: 'Reggae One', cursive;
+  transition: 0.5s ease all;
+  align-items: center;
+  flex-wrap: wrap;
+}
+form ul li input:hover{
+  color: rgb(0, 255, 0);
+  border-radius: 10px;
+  background-color: rgba(245, 222, 179, 0.11);
+}
+form span.shownav{
+  color: rgb(2, 163, 2);
+  transition: 0.5s ease all;
+}
+form span.shownav:hover{
+  text-shadow: 2px 2px rgb(187, 21, 21);
+  color: rgb(0, 255, 0);
+}
+div.content{
+  background-color: rgba(148, 156, 255, 0.774);
+  /* font-family: 'Reggae One', cursive; */
+  border-radius: 15px;
+}
+div.content ul{
+  list-style: none;
+}
+div.content ul li a{
+  text-decoration: none;
+}
+#tt:hover{
+  color: rgb(144, 144, 214);
+}

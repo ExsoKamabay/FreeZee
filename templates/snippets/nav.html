@@ -1,0 +1,20 @@
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&#9754;</a>
+    <a href="#">istri 1</a>
+    <a href="#">istri 2</a>
+    <a href="#">istri 3</a>
+    <a href="#">istri 4</a>
+</div>
+<form method="post">
+    {%csrf_token%}
+    <span style="font-size:30px;cursor:pointer" onclick="openNav();" class="shownav">&#9763;</span>
+    <input type="text" name="query" id="query" placeholder="&#9763; search &#9732;" style="text-align: center;">
+    <ul>
+        <li><input type="submit" value="All" name="alls" id="all"></li>
+        <li><input type="submit" value="Image" name="image" id="image"></li>
+        <li><input type="submit" value="Video" name="video" id="video"></li>
+        <li><input type="submit" value="News" name="news" id="news"></li>
+        <li><input type="submit" value="Apps" name="apps" id="apps"></li>
+        <li><input type="submit" value="Files" name="files" id="files"></li>
+    </ul>
+</form>
